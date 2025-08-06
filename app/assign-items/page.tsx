@@ -274,18 +274,24 @@ export default function AssignItems() {
           <div className="text-sm text-black space-y-2">
             <div className="flex justify-between">
               <span className="text-black">Subtotal:</span>
-              <span className="font-semibold text-black">${subtotal.toFixed(2)}</span>
+              <span className="font-semibold text-black">
+                ${subtotal.toFixed(2)}
+              </span>
             </div>
             {tip > 0 && (
               <div className="flex justify-between">
                 <span className="text-black">Tip:</span>
-                <span className="font-semibold text-black">${tip.toFixed(2)}</span>
+                <span className="font-semibold text-black">
+                  ${tip.toFixed(2)}
+                </span>
               </div>
             )}
             {tax > 0 && (
               <div className="flex justify-between">
                 <span className="text-black">Tax:</span>
-                <span className="font-semibold text-black">${tax.toFixed(2)}</span>
+                <span className="font-semibold text-black">
+                  ${tax.toFixed(2)}
+                </span>
               </div>
             )}
             <hr className="border-orange-200" />
