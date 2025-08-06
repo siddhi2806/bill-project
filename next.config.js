@@ -7,8 +7,8 @@ const nextConfig = {
     unoptimized: true,
   },
   // Uncomment and replace 'your-repo-name' with your actual repository name
-  basePath: '/bill-project',
-  assetPrefix: '/bill-project/',
+  // basePath: '/your-repo-name',
+  // assetPrefix: '/your-repo-name/',
 };
 
 module.exports = nextConfig;
