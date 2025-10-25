@@ -110,14 +110,14 @@ export default function ManualEntry() {
 
       {/* Add New Item Section */}
       <div className="mb-6 p-4 border rounded-lg bg-gray-50">
-        <h3 className="font-semibold mb-3">Add New Item</h3>
+        <h3 className="font-semibold mb-3 text-gray-700">Add New Item</h3>
         <div className="space-y-3">
           <input
             type="text"
             value={newItemName}
             onChange={(e) => setNewItemName(e.target.value)}
             placeholder="Item name (e.g., Coffee, Sandwich)"
-            className="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            className="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
             onKeyPress={(e) => handleKeyPress(e, addItem)}
           />
           <div className="flex gap-2">
@@ -129,7 +129,7 @@ export default function ManualEntry() {
                 placeholder="Price (e.g., 4.50)"
                 step="0.01"
                 min="0"
-                className="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
                 onKeyPress={(e) => handleKeyPress(e, addItem)}
               />
             </div>
@@ -157,7 +157,7 @@ export default function ManualEntry() {
                   type="text"
                   value={item.name}
                   onChange={(e) => updateItem(item.id, "name", e.target.value)}
-                  className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
                 />
               </div>
               <div className="w-28">
@@ -173,7 +173,7 @@ export default function ManualEntry() {
                   }
                   step="0.01"
                   min="0"
-                  className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
                 />
               </div>
               <button
@@ -201,7 +201,7 @@ export default function ManualEntry() {
               placeholder="0.00"
               step="0.01"
               min="0"
-              className="w-28 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-28 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
             />
           </div>
           <div className="flex justify-between items-center">
@@ -213,7 +213,7 @@ export default function ManualEntry() {
               placeholder="0.00"
               step="0.01"
               min="0"
-              className="w-28 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="w-28 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
             />
           </div>
         </div>
@@ -240,8 +240,8 @@ export default function ManualEntry() {
           )}
           <hr className="my-2" />
           <div className="flex justify-between font-bold text-lg">
-            <span>Total:</span>
-            <span>${total.toFixed(2)}</span>
+            <span className="text-black">Total:</span>
+            <span className="text-orange-500">${total.toFixed(2)}</span>
           </div>
         </div>
       </div>

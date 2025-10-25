@@ -179,7 +179,7 @@ export default function SplitSummary() {
             className="border rounded-lg p-4 bg-white"
           >
             <div className="flex justify-between items-center mb-3">
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold text-black">
                 {personSummary.person.name}
               </h3>
               <div className="text-xl font-bold text-orange-600">
@@ -189,7 +189,7 @@ export default function SplitSummary() {
 
             {/* Items breakdown */}
             {personSummary.items.length > 0 && (
-              <div className="space-y-1 text-sm text-gray-600">
+              <div className="space-y-1 text-sm text-black">
                 <div className="font-medium">Items:</div>
                 {personSummary.items.map(({ item, shareAmount }, index) => (
                   <div key={index} className="flex justify-between pl-4">
@@ -229,8 +229,10 @@ export default function SplitSummary() {
       {/* Total summary */}
       <div className="mb-6 p-4 bg-gray-50 rounded-lg">
         <div className="flex justify-between items-center">
-          <span className="font-semibold">Total Bill:</span>
-          <span className="text-xl font-bold">${totalAmount.toFixed(2)}</span>
+          <span className="font-semibold text-black">Total Bill:</span>
+          <span className="text-xl font-bold text-orange-500">
+            ${totalAmount.toFixed(2)}
+          </span>
         </div>
         <div className="text-sm text-gray-600 mt-1">
           Split among {summary.length} people

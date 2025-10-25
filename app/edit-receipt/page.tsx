@@ -92,7 +92,7 @@ export default function EditReceipt() {
                 value={item.name}
                 onChange={(e) => updateItem(item.id!, "name", e.target.value)}
                 placeholder="Item name"
-                className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
               />
             </div>
             <div className="w-24">
@@ -105,7 +105,7 @@ export default function EditReceipt() {
                 placeholder="0.00"
                 step="0.01"
                 min="0"
-                className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
               />
             </div>
             <button
@@ -138,7 +138,7 @@ export default function EditReceipt() {
             placeholder="0.00"
             step="0.01"
             min="0"
-            className="w-24 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            className="w-24 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
           />
         </div>
         <div className="flex justify-between items-center">
@@ -150,31 +150,31 @@ export default function EditReceipt() {
             placeholder="0.00"
             step="0.01"
             min="0"
-            className="w-24 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            className="w-24 p-2 border rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
           />
         </div>
       </div>
 
       {/* Total Section */}
       <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-        <div className="flex justify-between text-sm text-gray-600 mb-1">
+        <div className="flex justify-between text-sm text-black mb-1">
           <span>Subtotal:</span>
           <span>${subtotal.toFixed(2)}</span>
         </div>
         {tip > 0 && (
-          <div className="flex justify-between text-sm text-gray-600 mb-1">
+          <div className="flex justify-between text-sm text-black mb-1">
             <span>Tip:</span>
             <span>${tip.toFixed(2)}</span>
           </div>
         )}
         {tax > 0 && (
-          <div className="flex justify-between text-sm text-gray-600 mb-1">
+          <div className="flex justify-between text-sm text-black mb-1">
             <span>Tax:</span>
             <span>${tax.toFixed(2)}</span>
           </div>
         )}
         <hr className="my-2" />
-        <div className="flex justify-between font-bold text-lg">
+        <div className="flex justify-between font-bold text-lg text-black">
           <span>Total:</span>
           <span>${total.toFixed(2)}</span>
         </div>

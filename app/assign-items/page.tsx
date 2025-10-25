@@ -159,7 +159,7 @@ export default function AssignItems() {
             value={newPersonName}
             onChange={(e) => setNewPersonName(e.target.value)}
             placeholder="Enter person's name"
-            className="flex-1 p-3 border-2 border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-white shadow-sm"
+            className="flex-1 p-3 border-2 border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-white shadow-sm text-black"
             onKeyPress={(e) => e.key === "Enter" && addPerson()}
           />
           <button
@@ -192,15 +192,15 @@ export default function AssignItems() {
       {/* Assign Items Section */}
       {people.length > 0 && (
         <>
-          <hr className="mb-6 border-purple-200" />
+          <hr className="mb-6 border-orange-200" />
           <div className="mb-4">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="font-bold text-lg text-purple-800">
+              <h3 className="font-bold text-lg text-orange-800">
                 Assign Items
               </h3>
               <button
                 onClick={splitEvenly}
-                className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 shadow-md hover:shadow-lg font-medium"
+                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-md hover:shadow-lg font-medium"
               >
                 Split Evenly
               </button>
@@ -211,7 +211,7 @@ export default function AssignItems() {
               {items.map((item) => (
                 <div
                   key={item.id}
-                  className="border-2 border-purple-200 rounded-xl p-5 bg-gradient-to-br from-white to-purple-25 shadow-md hover:shadow-lg transition-shadow duration-200"
+                  className="border-2 border-orange-200 rounded-xl p-5 bg-gradient-to-br from-white to-orange-50 shadow-md hover:shadow-lg transition-shadow duration-200"
                 >
                   <div className="flex justify-between items-center mb-4">
                     <div>
@@ -310,7 +310,7 @@ export default function AssignItems() {
       <button
         onClick={handleContinue}
         disabled={people.length === 0}
-        className="w-full bg-gradient-to-r from-orange-600 to-indigo-600 text-white px-6 py-4 rounded-xl shadow-lg hover:from-orange-700 hover:to-indigo-700 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed transition-all duration-200 font-bold text-lg hover:shadow-xl"
+        className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-4 rounded-xl shadow-lg hover:from-orange-600 hover:to-orange-700 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed transition-all duration-200 font-bold text-lg hover:shadow-xl"
       >
         Continue to Summary
       </button>
